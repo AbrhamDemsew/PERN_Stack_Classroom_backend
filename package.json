@@ -1,0 +1,12 @@
+{
+  "name": "class-room-root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm install --prefix backend && npm run build --prefix backend",
+    "start": "npm run start --prefix backend"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
