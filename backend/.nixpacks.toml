@@ -1,0 +1,5 @@
+[phases.setup]
+node = "22.12.0"
+
+[env]
+NIXPACKS_NODE_VERSION = "22.12.0"
