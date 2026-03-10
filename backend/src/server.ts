@@ -3,7 +3,7 @@ AgentAPI.config();
 
 import 'dotenv/config';
 import express from 'express';
-import subjectRouter from './routes/subject';
+import subjectRouter from './routes/subject.js';
 import cors from 'cors';
 import securityMiddleware from './middleware/security';
 import { auth } from './lib/auth';
