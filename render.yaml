@@ -2,9 +2,10 @@ services:
   - type: web
     name: classroom-backend
     env: node
-    rootDir: backend
-    buildCommand: npm install && npm run build
-    startCommand: npm run start
+    # Keep service root at repo root; commands target backend/ explicitly so
+    # builds succeed even if rootDir is ignored by Render.
+    buildCommand: npm install --prefix backend && npm run build --prefix backend
+    startCommand: npm run start --prefix backend
     envVars:
       - key: NODE_VERSION
         value: "22.12.0"
